@@ -3,5 +3,7 @@
 <p>Hello {{ getName() }}</p>
 <p>Hello {{ 10 + 5 }}</p>
 
-<app-posts [postImg]="imgURL" (selectedImg)="logImg($event)"></app-posts>
+<app-posts [postImg]="imgURL" (selectedImg)="logImg($event)">
+  some caption
+</app-posts>
 
