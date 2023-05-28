@@ -1,7 +1,10 @@
-<input (keyup)="changeImage($event)" value="https://picsum.photos/id/237/500/500" style="width: 250px;">
-<p>Hello {{ name.toLocaleUpperCase() }}</p>
+<input (keyup)="changeImage($event)" [value]="imgURL" style="width: 250px;">
+<p>Hello {{ name | titlecase }}</p>
 <p>Hello {{ getName() }}</p>
 <p>Hello {{ 10 + 5 }}</p>
+<p>{{ currentDate | date: 'MMMM d'}}</p>
+<p>{{ cost | currency: 'INR'}}</p>
+<p>{{ temparature | number: '1.0-0'}}</p>
 
 <app-posts [postImg]="imgURL" (selectedImg)="logImg($event)">
   some caption
