@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 
 @Component({
   selector: 'app-posts',
@@ -9,4 +9,5 @@ export class PostsComponent {
 
   // imgURL = 'https://picsum.photos/id/237/200/300'
   @Input() postImg = '';
+  @Output() selectedImg = new EventEmitter();
 }
