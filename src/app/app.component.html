@@ -1,3 +1,11 @@
+
+<button (click)="blueClass = !blueClass" [ngClass]="{blue: blueClass}">change</button>
+<ng-template [ngIf]="blueClass">
+  <p>Button is blue</p>
+</ng-template>
+
+<hr>
+
 <input (keyup)="changeImage($event)" [value]="imgURL" style="width: 250px;">
 <p>Hello {{ name | titlecase }}</p>
 <p>Hello {{ getName() }}</p>

@@ -11,6 +11,8 @@ export class AppComponent {
   cost = '2000'
   temparature = '25.23'
 
+  blueClass = false;
+
   imgURL = "https://picsum.photos/id/231/500/500";
   getName() {
     return this.name;
